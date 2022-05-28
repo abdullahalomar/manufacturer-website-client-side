@@ -22,11 +22,12 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/portfolio' element={<Portfolio/>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/businessSummary' element={<BusinessSummary/>}></Route>
         <Route path='/offer' element={<Offer/>}></Route>
-        <Route path='purchase' element={
+        <Route path='/purchase' element={
           <RequireAuth>
             <Purchase/>
           </RequireAuth>

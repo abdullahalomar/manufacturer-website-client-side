@@ -5,7 +5,7 @@ const Product = ({product}) => {
     const { _id, name, picture, min_quantity, available_quantity, price, short_desc } = product;
     const navigate = useNavigate();
     const NavigateToPurchase = id => {
-        navigate(`/purchase/${id}`);
+        navigate('/purchase');
     }
     return (
         <div class="card card-compact w-96 bg-base-100 shadow-xl ">
@@ -19,7 +19,7 @@ const Product = ({product}) => {
                 <p>Price: ${price}</p>
                 <p> {short_desc}</p>
                 <div class="card-actions justify-end">
-                    <button onClick={()=> NavigateToPurchase(_id)} class="btn btn-primary">Buy Now</button>
+                    <button onClick={()=> NavigateToPurchase()} class="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>
