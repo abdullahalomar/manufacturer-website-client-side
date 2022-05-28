@@ -9,6 +9,8 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import Product from './Pages/Product/Product';
 import Register from './Pages/Login/Register';
 import Purchase from './Pages/Purchase/Purchase';
+import NotFound from './Pages/NotFound/NotFound';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
         <Route path='/purchase' element={<Purchase/>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register/>}></Route>
+        <Route path='*' element={<NotFound/>}></Route>
       </Routes>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

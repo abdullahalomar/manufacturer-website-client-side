@@ -1,17 +1,39 @@
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 
 
 const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  
   const [
     createUserWithEmailAndPassword,
     user,
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
+  let signInError; 
+
+  if (error) {
+    (
+      
+      signInError = <p className='text-red-500'>Error: {error?.message}</p>
+    
+    );
+  }
+  if (loading) {
+    return <Loading></Loading>;
+  }
+  if (user) {
+     (
+      <div>
+        <p>Registered User: {user.email}</p>
+      </div>
+    );
+  }
 
   console.log(email, password);
     
@@ -48,14 +70,20 @@ const Register = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="password" class="input input-bordered" />
-          <label class="label">
-            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-          </label>
         </div>
-        <div class="form-control mt-6">
+              <div class="form-control mt-6">
+                {signInError}
                 <button
                   onClick={() => createUserWithEmailAndPassword(email, password)}
                   class="btn btn-primary">Register</button>
+                <div className='flex gap-3 my-4'>
+                  <div>
+                  Already have an account?
+                  </div>
+                  <div>
+                  <Link className='font-bold' to='/login'>Please Login</Link>
+                  </div>
+                </div>
         </div>
       </div>
     </div>
