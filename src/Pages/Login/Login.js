@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import Loading from '../Loading/Loading';
+import Loading from '../Shared/Loading/Loading';
+import google from '../../images/icons/icons8-google-48.png';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -13,7 +14,8 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    console.log(email,password);
+    
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     
   let signInError;
   const navigate = useNavigate();
@@ -21,16 +23,16 @@ const Login = () => {
     let from = location.state?.from?.pathname || '/';
   
   useEffect(() => {
-    if (user) {
+    if (user || gUser) {
       navigate(from, { replace: true });
     }
-  }, [user, from, navigate])
+  }, [user, gUser, from, navigate])
   
-  if (loading) {
+  if (loading || gLoading) {
     return <Loading></Loading>
   }
   
-  if (error) {
+  if (error || gError) {
     signInError = <p className='text-red-500'>{ error?.message}</p>
   }
   
@@ -66,13 +68,10 @@ const Login = () => {
                     placeholder="password" class="input input-bordered"
                     type="password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                     />
+                    onChange={(e) => setPassword(e.target.value)}/>
                             
                             <label class="label">
-    {error.password?.type === 'required' && <span class="label-text-alt text-red-500">{ error.password.message}</span>}                           
-    {error.password?.type === 'minLength' && <span class="label-text-alt text-red-500">{ error.password.message}</span>}                             
-  </label>
+                               </label>
               </div>
               <div class="form-control mt-6">
                 {signInError}
@@ -85,11 +84,13 @@ const Login = () => {
                   <Link className='font-bold' to='/register'>Please Register</Link>
                   </div>
                 </div>
+                <div className="divider">OR</div>
+                <button onClick={() => signInWithGoogle()} class="btn btn-secondary my-3"><img src={google} alt="" /> GOOGLE SIGN IN</button>
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
         
     );
 };

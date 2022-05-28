@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
-import Loading from '../Loading/Loading';
+import Loading from '../Shared/Loading/Loading';
+import google from '../../images/icons/icons8-google-48.png';
 
 
 const Register = () => {
@@ -15,19 +16,22 @@ const Register = () => {
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
+
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+
   let signInError; 
 
-  if (error) {
+  if (error || gError) {
     (
       
       signInError = <p className='text-red-500'>Error: {error?.message}</p>
     
     );
   }
-  if (loading) {
+  if (loading || gLoading) {
     return <Loading></Loading>;
   }
-  if (user) {
+  if (user || gUser) {
      (
       <div>
         <p>Registered User: {user.email}</p>
@@ -84,6 +88,8 @@ const Register = () => {
                   <Link className='font-bold' to='/login'>Please Login</Link>
                   </div>
                 </div>
+                <div className="divider">OR</div>
+                <button onClick={() => signInWithGoogle ()} class="btn btn-secondary my-3"><img src={google} alt="" /> GOOGLE SIGN IN</button>
         </div>
       </div>
     </div>

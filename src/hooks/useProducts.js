@@ -9,9 +9,13 @@ const useProducts = (count = 0) => {
 
     useEffect(() => {
         if (count) {
-            fetch('products.json').then(response => response.json()).then(json => setProducts(json.slice(0, count)))
+            fetch('products.json')
+                .then(response => response.json())
+                .then(json => setProducts(json.slice(0, count)))
         } else {
-            fetch('products.json').then(response => response.json()).then(json => setProducts(json.slice()))
+            fetch('products.json')
+                .then(response => response.json())
+                .then(json => setProducts(json.slice()))
         }
 
     }, [])
