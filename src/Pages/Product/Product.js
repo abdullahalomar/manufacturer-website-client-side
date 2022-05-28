@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Product = ({product}) => {
     const { _id, name, picture, min_quantity, available_quantity, price, short_desc } = product;
     const navigate = useNavigate();
-    const NavigateToPuschase = id => {
+    const NavigateToPurchase = id => {
         navigate(`/purchase/${id}`);
     }
     return (
@@ -19,7 +19,7 @@ const Product = ({product}) => {
                 <p>Price: ${price}</p>
                 <p> {short_desc}</p>
                 <div class="card-actions justify-end">
-                    <button onClick={()=> NavigateToPuschase(_id)} class="btn btn-primary">Buy Now</button>
+                    <button onClick={()=> NavigateToPurchase(_id)} class="btn btn-primary">Buy Now</button>
                 </div>
             </div>
         </div>
