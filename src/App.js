@@ -8,6 +8,7 @@ import Login from './Pages/Login/Login';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Product from './Pages/Product/Product';
 import Register from './Pages/Login/Register';
+import Purchase from './Pages/Purchase/Purchase';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/portfolio' element={<Portfolio/>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/purchase' element={<Purchase/>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register/>}></Route>
       </Routes>

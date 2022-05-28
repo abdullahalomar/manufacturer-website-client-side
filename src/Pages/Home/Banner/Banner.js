@@ -3,7 +3,7 @@ import manufacturPhoto from '../../../images/800_3506070_5f0a3f321098ce8bc727bce
 
 const Banner = () => {
     return (
-        <div class="hero min-h-screen bg-base-200">
+        <div class="hero min-h-screen ">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img src={manufacturPhoto} />
     <div>

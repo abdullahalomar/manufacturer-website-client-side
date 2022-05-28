@@ -2,141 +2,141 @@
   {
     "_id": "6291e4cebb1cf3c5962d999b",
     "index": 0,
-    "name": "Lenore Larsen",
-    "picture": "http://placehold.it/32x32",
+    "name": "Processor",
+    "picture": "../src/images/products/Computer-Processor-PNG-File.png",
     "min_quantity": 286,
     "available_quantity": 15861,
     "price": 122,
-    "short_desc": "Cillum id minim veniam consequat velit amet. Sunt consectetur ex proident mollit sunt anim do et minim. Ullamco voluptate duis ut adipisicing excepteur sint voluptate sunt do eu cillum eiusmod minim tempor.\r\n"
+    "short_desc": "For unmatched power and speed, this unlocked CPU series delivers 18 cores.\r\n"
   },
   {
     "_id": "6291e4ce176489027f0de284",
     "index": 1,
-    "name": "Davidson Frederick",
-    "picture": "http://placehold.it/32x32",
+    "name": "Hard Disk",
+    "picture": "../src/images/products/hard_disc_PNG102034.png",
     "min_quantity": 201,
     "available_quantity": 14241,
     "price": 106,
-    "short_desc": "Excepteur est culpa in mollit ipsum fugiat sit laborum sit anim culpa laborum proident et. Consectetur cillum do nulla cupidatat consequat nulla Lorem nulla aute et anim nostrud nisi. Laborum anim minim tempor esse ex fugiat. Sint laborum reprehenderit occaecat commodo velit qui minim laboris deserunt do. Dolore ut est duis elit non sit adipisicing cillum. Qui cupidatat labore eu ut id do est. Minim nostrud ad sint consectetur.\r\n"
+    "short_desc": "Built On Proven Reliability And Innovation, BarraCuda Hard Drives Are Available.\r\n"
   },
   {
     "_id": "6291e4ced541b0c123840790",
     "index": 2,
-    "name": "Best Donaldson",
-    "picture": "http://placehold.it/32x32",
+    "name": "Graphics Card",
+    "picture": "../src/images/products/Graphic-Card-PNG-Picture.png",
     "min_quantity": 359,
     "available_quantity": 14139,
     "price": 140,
-    "short_desc": "Elit id ex deserunt in laboris culpa labore dolore duis duis sint cupidatat. Amet sint in elit labore ex sit est irure ullamco nulla sint ut consectetur ex. Magna culpa officia exercitation eiusmod officia. Deserunt ut veniam laboris pariatur dolore elit aute elit. Elit labore enim irure esse amet consequat irure occaecat ad ipsum incididunt qui.\r\n"
+    "short_desc": "RX 6900 XT and Integrated with a 16GB GDDR6 256-bit memory interface.\r\n"
   },
   {
     "_id": "6291e4cef62a216c86666646",
     "index": 3,
-    "name": "Jerry Clark",
-    "picture": "http://placehold.it/32x32",
+    "name": "Audio Speaker",
+    "picture": "../src/images/products/audio_speakers.png",
     "min_quantity": 203,
     "available_quantity": 12709,
     "price": 119,
-    "short_desc": "Occaecat non duis est exercitation sunt sint do eu laborum velit duis. Minim adipisicing deserunt voluptate quis labore consectetur mollit. Excepteur eu quis tempor voluptate reprehenderit. Esse ex nostrud eiusmod in eu velit proident id officia aute exercitation veniam. Nulla labore cillum ullamco nulla cillum ex irure.\r\n"
+    "short_desc": "Convenient connection to any device that has a 3.5mm headphone output or dual RCA output.\r\n"
   },
   {
     "_id": "6291e4ce67ec8876c4d44fec",
     "index": 4,
-    "name": "Stark Mccullough",
-    "picture": "http://placehold.it/32x32",
+    "name": "Mouse",
+    "picture": "../src/images/products/computer_mouse.png",
     "min_quantity": 207,
     "available_quantity": 19878,
     "price": 130,
-    "short_desc": "Amet ad ad excepteur est ipsum aliqua sunt incididunt dolore irure magna. Dolore in proident anim enim nisi consectetur. Consequat ipsum ex sunt elit sint ut tempor. Mollit amet consequat tempor exercitation do enim est deserunt elit dolore mollit esse magna. Commodo reprehenderit tempor do non eu.\r\n"
+    "short_desc": "Excellent Ergonomic DesignThe hand design/perfect fit Palm/grip feels.\r\n"
   },
   {
     "_id": "6291e4ce9d2c8d632f094813",
     "index": 5,
-    "name": "Rosanne Conner",
-    "picture": "http://placehold.it/32x32",
+    "name": "Headphone",
+    "picture": "../src/images/products/headphones.png",
     "min_quantity": 482,
     "available_quantity": 19898,
     "price": 138,
-    "short_desc": "Cupidatat qui id excepteur irure. Labore elit minim officia dolor ullamco aliquip ipsum velit pariatur dolor irure dolore anim. Mollit veniam labore deserunt velit ea qui occaecat ipsum esse ea ullamco commodo dolore. Cillum commodo dolor labore ullamco veniam duis voluptate. Officia mollit duis enim pariatur sit labore duis minim laborum duis officia deserunt. Dolore veniam ex qui id voluptate aliquip nostrud tempor reprehenderit cupidatat laborum magna. Qui pariatur cupidatat laboris velit cupidatat labore labore consectetur cupidatat elit.\r\n"
+    "short_desc": "Exceptional sound quality with specially designed 30mm driver unit.\r\n"
   },
   {
     "_id": "6291e4cec8924079648a5d02",
     "index": 6,
-    "name": "Barbara Lopez",
-    "picture": "http://placehold.it/32x32",
+    "name": "Monitor",
+    "picture": "../src/images/products/monitor_PNG101655.png",
     "min_quantity": 417,
     "available_quantity": 19062,
     "price": 119,
-    "short_desc": "Aliqua labore ipsum laborum tempor enim culpa mollit eiusmod irure eu Lorem dolore anim. Aliqua elit velit non officia veniam. Aute ut do anim esse magna amet ea qui. Enim ipsum anim laborum aute dolor irure anim.\r\n"
+    "short_desc": "Browse the web, stream your shows, and get some work done on the HP V22 FHD Monitor.\r\n"
   },
   {
     "_id": "6291e4ce1fda181ea3489dec",
     "index": 7,
-    "name": "Hopper Tran",
-    "picture": "http://placehold.it/32x32",
+    "name": "Printer",
+    "picture": "../src/images/products/printer.png",
     "min_quantity": 221,
     "available_quantity": 10140,
     "price": 113,
-    "short_desc": "Nisi nisi duis culpa proident excepteur eiusmod id veniam velit velit nostrud culpa minim est. Sint aliquip exercitation reprehenderit ex fugiat. Nulla deserunt esse ut aliquip nisi consequat velit ullamco quis. Sint cillum sint ad culpa do id nisi commodo. Incididunt nisi elit sit nostrud nulla non labore quis tempor sit non nulla duis ad. Sint consectetur culpa nostrud veniam aliquip non et.\r\n"
+    "short_desc": "The Pantum P2506W Printer is built in Single Function Mono Laser.\r\n"
   },
   {
     "_id": "6291e4ce743668ab3635c18b",
     "index": 8,
-    "name": "Mcguire Camacho",
-    "picture": "http://placehold.it/32x32",
+    "name": "Ram",
+    "picture": "../src/images/products/RAM-PNG-Image.png",
     "min_quantity": 310,
     "available_quantity": 17019,
     "price": 127,
-    "short_desc": "Ipsum aliqua tempor esse nisi eiusmod non nisi irure duis aliquip fugiat proident. Sint adipisicing magna irure veniam. Officia aliquip qui adipisicing ex velit veniam dolore cillum est elit proident amet dolor ea.\r\n"
+    "short_desc": "This is so that your processor can get to it quickly.\r\n"
   },
   {
     "_id": "6291e4cefeb55f037e367782",
     "index": 9,
-    "name": "Kelly Dodson",
-    "picture": "http://placehold.it/32x32",
+    "name": "Scanner",
+    "picture": "../src/images/products/scanner.png",
     "min_quantity": 256,
     "available_quantity": 18231,
     "price": 111,
-    "short_desc": "Duis qui consectetur occaecat culpa quis dolor fugiat ea pariatur excepteur consectetur. Eu deserunt est in adipisicing exercitation reprehenderit ex ullamco adipisicing deserunt qui veniam mollit laborum. Proident deserunt nulla id est sit aliqua sint adipisicing nisi. Do sit proident Lorem exercitation deserunt commodo. Eiusmod veniam excepteur laboris cillum non. Ex elit esse culpa anim exercitation in culpa est consectetur nostrud esse consequat sint incididunt.\r\n"
+    "short_desc": "Modern scanners typically use a charge-coupled device (CCD).\r\n"
   },
   {
     "_id": "6291e4cee92b1e84d9c4a39e",
     "index": 10,
-    "name": "Cora Farmer",
-    "picture": "http://placehold.it/32x32",
+    "name": "SSD",
+    "picture": "../src/images/products/SSD-PNG-Picture.png",
     "min_quantity": 439,
     "available_quantity": 17556,
     "price": 140,
-    "short_desc": "Nulla do deserunt irure excepteur culpa. Reprehenderit laboris tempor aliqua fugiat et amet non exercitation consequat cillum duis aliquip. Excepteur deserunt exercitation id nisi exercitation est et dolor voluptate veniam pariatur. Esse ullamco ea dolore laborum irure minim. Eiusmod duis tempor aute culpa anim enim elit non consequat duis duis qui. Proident irure sint veniam est nostrud elit officia laboris Lorem. Anim fugiat sint deserunt ut tempor nisi commodo aute.\r\n"
+    "short_desc": "Western Digital 120GB M.2 SSD is help to keep your data safe from loss in the case.\r\n"
   },
   {
     "_id": "6291e4cee836306e8155c6e3",
     "index": 11,
-    "name": "Glass Henderson",
-    "picture": "http://placehold.it/32x32",
+    "name": "Sound Card",
+    "picture": "../src/images/products/Turtle_Beach_Sound_Card_(Catalina).png",
     "min_quantity": 202,
     "available_quantity": 10216,
     "price": 104,
-    "short_desc": "Est occaecat velit incididunt culpa. Fugiat ea pariatur anim veniam deserunt ipsum eiusmod adipisicing consequat cupidatat ullamco. Culpa ullamco nisi velit ipsum occaecat occaecat. Lorem quis quis tempor non deserunt sint deserunt consectetur sunt consectetur do anim duis mollit. Magna adipisicing cillum officia sint non aliquip tempor sit. Id reprehenderit velit sint fugiat irure Lorem reprehenderit incididunt.\r\n"
+    "short_desc": "EsSound Blaster Z, part of the ultra high-performance Z-Series of Sound Blaster sound cards.\r\n"
   },
   {
     "_id": "6291e4ce21862c830114a6a8",
     "index": 12,
-    "name": "Margie Snider",
-    "picture": "http://placehold.it/32x32",
+    "name": "Power Supply",
+    "picture": "../src/images/products/vp550-plus_pdt1.png",
     "min_quantity": 256,
     "available_quantity": 11683,
     "price": 116,
-    "short_desc": "Et sunt ad aliquip quis sunt. Est sunt nulla excepteur occaecat occaecat. In deserunt enim anim elit pariatur et dolor. Ea laboris esse officia ex laborum do adipisicing fugiat.\r\n"
+    "short_desc": "Brand Value Top, Value-Top VT-S200B Plus PSU Category Non Modular, Maximum Power 200 Watt.\r\n"
   },
   {
     "_id": "6291e4ce4cd9f43b58331233",
     "index": 13,
-    "name": "Traci Abbott",
-    "picture": "http://placehold.it/32x32",
+    "name": "Keyboard",
+    "picture": "../src/images/products/keyboard_PNG5866.png",
     "min_quantity": 293,
     "available_quantity": 16301,
     "price": 107,
-    "short_desc": "Dolore non ea qui nostrud culpa elit proident nisi non amet. Laboris qui commodo fugiat et duis proident cillum. Dolor ut magna et ex ad incididunt. Esse nisi officia cillum magna magna aliquip consequat nostrud fugiat dolor amet. Veniam excepteur quis ex cillum anim voluptate officia sit. Id voluptate minim exercitation laborum elit ad dolore id anim incididunt exercitation id do id.\r\n"
+    "short_desc": "Brand - Micropack, Model - Micropack K203, Series - Regular, Style &amp; Size - Regular Big.\r\n"
   }
 ]

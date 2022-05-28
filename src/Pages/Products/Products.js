@@ -1,14 +1,12 @@
 import React, {useEffect, useState} from 'react';
+import useProducts from '../../hooks/useProducts';
 import Product from '../Product/Product';
 
 const Products = () => {
-    const [products, setProduct] = useState([]);
-    useEffect(() => {
-        fetch('products.json').then(response => response.json()).then(json => setProduct(json))
-    }, [])
+    const [products, setProducts] = useProducts(6);
 
     return (
-        <div className="grid lg:grid-cols-3 gap-5  px-10">
+        <div className="grid lg:grid-cols-3 gap-5  px-12">
 
 
             {
