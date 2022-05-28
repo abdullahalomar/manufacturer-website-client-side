@@ -15,6 +15,9 @@ import RequireAuth from './Pages/Login/RequireAuth';
 import Footer from './Pages/Shared/Footer/Footer';
 import BusinessSummary from './Pages/BusinessSummary/BusinessSummary';
 import Offer from './Pages/Offer/Offer';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import MyReview from './Pages/Dashboard/MyReview';
 
 function App() {
   return (
@@ -32,6 +35,14 @@ function App() {
             <Purchase/>
           </RequireAuth>
         }></Route>
+        <Route path='/dashboard' element={
+          <RequireAuth>
+            <Dashboard/>
+          </RequireAuth>
+        }>
+          <Route index element={<MyOrders/>}></Route>
+          <Route path='review' element={<MyReview/>}></Route>
+        </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='*' element={<NotFound/>}></Route>

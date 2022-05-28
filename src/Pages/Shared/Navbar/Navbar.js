@@ -16,7 +16,10 @@ const Navbar = () => {
         <li><Link to='portfolio'>Portfolio</Link></li>
         {/* <li><Link to='portfolio'>Product</Link></li> */}
         <li><Link to='Blog'>Blog</Link></li>
-        <li>{ user ? <button class="btn btn-secondary" onClick={logout}>Log Out</button> : <Link to='login'>Login</Link>}</li>
+        {
+            user && <li><Link to='/dashboard'>Dashboard</Link></li>
+        }
+        <li>{ user ? <button class="btn btn-accent" onClick={logout}>Log Out</button> : <Link to='login'>Login</Link>}</li>
     </>
 
     return (
