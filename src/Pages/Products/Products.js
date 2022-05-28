@@ -6,7 +6,7 @@ const Products = () => {
     const [products, setProducts] = useProducts(6);
 
     return (
-        <div className="grid lg:grid-cols-3 gap-5  px-12">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 px-12">
 
 
             {
