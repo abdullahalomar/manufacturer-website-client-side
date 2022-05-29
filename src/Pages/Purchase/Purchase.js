@@ -14,7 +14,7 @@ const Purchase = () => {
     const { register, handleSubmit } = useForm();
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://pure-spire-01471.herokuapp.com/product/${productId}`;
         
         fetch(url)
             .then(response => response.json())
@@ -28,7 +28,7 @@ const Purchase = () => {
         data.price = data.quantity * productItem.price;
         data.status = 'unpaid';
 
-        const url = `http://localhost:5000/create-order`;
+        const url = `https://pure-spire-01471.herokuapp.com/create-order`;
     fetch(url, {
         method: 'POST',
         headers: {

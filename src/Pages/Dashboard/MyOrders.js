@@ -9,14 +9,14 @@ const MyOrders = () => {
     const [reload, setReload] = useState(false);
     const [user] = useAuthState(auth);
     useEffect(() => {
-        fetch(`http://localhost:5000/order?user=${user.uid}`)
+        fetch(`https://pure-spire-01471.herokuapp.com/order?user=${user.uid}`)
             .then(response => response.json())
             .then(json => setOrders(json))
     }, [reload])
 
     
     const cancelOrder = (id) => {
-        fetch(`http://localhost:5000/delete-order/${id}`)
+        fetch(`https://pure-spire-01471.herokuapp.com/delete-order/${id}`)
             .then(response => response.json())
             .then(json => setReload(!reload));
     }

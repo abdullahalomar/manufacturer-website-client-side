@@ -15,7 +15,7 @@ const MyReview = () => {
         delete data.submit;
         data.name = user.displayName;
 
-    const url = `http://localhost:5000/add-review`;
+    const url = `https://pure-spire-01471.herokuapp.com/add-review`;
     fetch(url, {
         method: 'POST',
         headers: {

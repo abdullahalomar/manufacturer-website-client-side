@@ -9,7 +9,7 @@ const useProducts = (count = 0) => {
 
     useEffect(() => {
         if (count) {
-            fetch('http://localhost:5000/product')
+            fetch('https://pure-spire-01471.herokuapp.com/product')
                 .then(response => response.json())
                 .then(json => setProducts(json.slice(0, count)))
         } else {
