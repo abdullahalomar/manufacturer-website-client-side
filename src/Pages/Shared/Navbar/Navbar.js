@@ -12,7 +12,6 @@ const Navbar = () => {
     }
     const navMenu = <>
         <li><Link to='/'> Home</Link></li>
-        <li><Link to='/purchase'>Purchase</Link></li>
         <li><Link to='portfolio'>Portfolio</Link></li>
         {/* <li><Link to='portfolio'>Product</Link></li> */}
         <li><Link to='Blog'>Blog</Link></li>
@@ -32,7 +31,7 @@ const Navbar = () => {
                     <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         {navMenu} </ul>
                 </div>
-                <p class="btn btn-ghost normal-case text-xl">Ram Manufacturer</p>
+                <a href='/home' class="btn btn-ghost normal-case text-xl">Ram Manufacturer</a>
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
