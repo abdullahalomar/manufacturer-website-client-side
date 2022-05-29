@@ -20,7 +20,6 @@ import MyOrders from './Pages/Dashboard/MyOrders';
 import MyReview from './Pages/Dashboard/MyReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import ManageOrder from './Pages/Dashboard/ManageOrder';
-import Payment from './Pages/Payment/Payment';
 
 function App() {
   return (
@@ -39,7 +38,7 @@ function App() {
            </RequireAuth>
          
         }></Route>
-          <Route path='/pay/:order' element={ <RequireAuth><Payment/></RequireAuth>}></Route>
+  
         <Route path='/dashboard' element={
           <RequireAuth>
             <Dashboard/>
