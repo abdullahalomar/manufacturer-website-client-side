@@ -9,7 +9,7 @@ const useProducts = (count = 0) => {
 
     useEffect(() => {
         if (count) {
-            fetch('products.json')
+            fetch('http://localhost:5000/product')
                 .then(response => response.json())
                 .then(json => setProducts(json.slice(0, count)))
         } else {

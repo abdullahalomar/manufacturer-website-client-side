@@ -7,8 +7,6 @@ const Products = () => {
 
     return (
         <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 px-12">
-
-
             {
                 products.map(product => <Product
                     key={product._id}
