@@ -10,7 +10,7 @@ const Purchase = () => {
     const [productItem, setProductItem] = useState({});
     const [user, loading] = useAuthState(auth);
     // const [reload, setIsReload] = useState(true);
-    const onSubmit = data => console.log(data);
+   
     const { register, handleSubmit } = useForm();
 
     useEffect(() => {
@@ -20,7 +20,26 @@ const Purchase = () => {
             .then(response => response.json())
         .then(json => setProductItem(json))
     },[])
-    console.log(productItem);
+ 
+
+    const onSubmit = data => {
+        data.user_id = user.uid;
+        data.product = productItem.name;
+        data.price = data.quantity * productItem.price;
+        data.status = 'unpaid';
+
+        const url = `http://localhost:5000/create-order`;
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => response.json())
+        .then(result => console.log(result));
+    }
+    
     return ( 
         <div>
           
