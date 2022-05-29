@@ -36,7 +36,6 @@ function App() {
            <RequireAuth>
              <Purchase/>
            </RequireAuth>
-         
         }></Route>
   
         <Route path='/dashboard' element={
