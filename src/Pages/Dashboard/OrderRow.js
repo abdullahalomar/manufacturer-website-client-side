@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const OrderRow = (props) => {
-   const { order, cancelOrder } = props;
+    const { order, cancelOrder } = props;
+    const navigate = useNavigate();
+    
+    const pay = order => {
+        navigate(`/pay/${order}`)
+    }
    
   
     return (
@@ -27,7 +33,7 @@ const OrderRow = (props) => {
         <td>
         <div class="btn-group">
             <button class="btn bg-red-500" onClick={()=>cancelOrder(order._id)}>Cancel</button>
-            <button class="btn bg-green-500">Pay</button>
+            <button class="btn bg-green-500" onClick={()=>pay(order._id)}>Pay</button>
         </div>
         </td>
     </tr>
