@@ -13,8 +13,8 @@ const Portfolio = () => {
     <div class="card-actions justify-end">
 
     <a className='btn btn-primary' href="https://abdullahalomar.github.io/bhandaria/">First Website</a>
-    <a className='btn btn-primary' href="https://abdullahalomar.github.io/bhandaria/">Second Website</a>
-    <a className='btn btn-primary' href="https://abdullahalomar.github.io/bhandaria/">Third Website</a>
+    <a className='btn btn-primary' href="https://fortfolio-site.netlify.app/">Second Website</a>
+    <a className='btn btn-primary' href="https://sky-project.netlify.app/">Third Website</a>
     </div>
   </div>
 </div>
