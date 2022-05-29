@@ -18,6 +18,8 @@ import Offer from './Pages/Offer/Offer';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyReview from './Pages/Dashboard/MyReview';
+import MyProfile from './Pages/Dashboard/MyProfile';
+import ManageOrder from './Pages/Dashboard/ManageOrder';
 
 function App() {
   return (
@@ -30,9 +32,10 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/businessSummary' element={<BusinessSummary/>}></Route>
         <Route path='/offer' element={<Offer/>}></Route>
-        <Route path='/product/productId' element={
-          
-            <Purchase/>
+        <Route path='/product/:productId' element={
+           <RequireAuth>
+             <Purchase/>
+           </RequireAuth>
          
         }></Route>
         <Route path='/dashboard' element={
@@ -42,6 +45,8 @@ function App() {
         }>
           <Route index element={<MyOrders/>}></Route>
           <Route path='review' element={<MyReview/>}></Route>
+          <Route path='profile' element={<MyProfile/>}></Route>
+          {/* <Route path='manage' element={<ManageOrder/>}></Route> */}
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register/>}></Route>
